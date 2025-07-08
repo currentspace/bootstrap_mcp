@@ -1,0 +1,44 @@
+{
+    "name": "bootstrap-mcp",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Bootstrap MCP Server with hot reload proxy architecture",
+    "main": "dist/server.js",
+    "engines": {
+        "node": ">=24.0.0"
+    },
+    "scripts": {
+        "dev": "tsx watch src/server.ts",
+        "build": "node build.mjs",
+        "start": "node dist/server.js",
+        "typecheck": "tsc --noEmit",
+        "lint": "eslint src --ext .ts",
+        "lint:fix": "eslint src --ext .ts --fix",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "format:check": "prettier --check \"src/**/*.ts\"",
+        "clean": "rm -rf dist"
+    },
+    "keywords": [
+        "mcp",
+        "bootstrap",
+        "template"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.13.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.29.0",
+        "@types/node": "^24.0.3",
+        "@typescript-eslint/eslint-plugin": "^8.34.1",
+        "@typescript-eslint/parser": "^8.34.1",
+        "esbuild": "^0.25.5",
+        "eslint": "^9.29.0",
+        "eslint-config-prettier": "^10.1.5",
+        "eslint-plugin-prettier": "^5.5.0",
+        "prettier": "^3.5.3",
+        "tsx": "^4.20.3",
+        "typescript": "^5.8.3"
+    }
+}
