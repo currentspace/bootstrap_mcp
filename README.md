@@ -2,6 +2,10 @@
 
 A minimal MCP (Model Context Protocol) server template with hot reload support for development.
 
+<a href="https://glama.ai/mcp/servers/@currentspace/bootstrap_mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@currentspace/bootstrap_mcp/badge" alt="Bootstrap Server MCP server" />
+</a>
+
 ## Features
 
 - **Hot Reload Proxy**: Maintains connection with Claude while allowing server restarts
